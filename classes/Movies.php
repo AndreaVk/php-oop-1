@@ -15,4 +15,5 @@ class Movies {
         $this->duration = $_duration;
         $this->release_year = $_release_year;
     }
+}
     ?>
