@@ -1,13 +1,13 @@
 <?php
 
-require_once __DIR__ . "/classes/Movies.php";
+require_once __DIR__ ."/classes/Movies.php";
 
-$Movies = {
+$Movies = [
     new Movies("Shutter Island", "Scorsese", "Di Caprio, Ruffalo, Kingsley", "138min", 2010)
     new Movies("La notte del giudizio (The Purge)", "De Monaco", "Hawke, Headey, Kane", "85min", 2013)
     new Movies("La maschera di cera", "Collet-Serra", "Padelecki, Murray, Hilton", "113min", 2005)
     new Movies("La ricerca della felicità ", "Muccino", "Will Smith, Jaden Smith", "117min", 2006)
-}
+];
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@ $Movies = {
 </head>
 <body>
     <h1>Consigliati per te:</h1>
-    <?php foreach ($movies as $movie) { ?>
+    <?php foreach ($Movies as $movie) { ?>
         <div>
             <h2>Titolo:<?php echo $movie->title ?></h2>
             <ul>
